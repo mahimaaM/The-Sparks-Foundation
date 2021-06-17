@@ -1,9 +1,9 @@
-                                                         || The Spark Foundation ||
+                                                         || The Sparks Foundation ||
 
 
                                                             NAME: MAHIMA MAURYA
                                                             
-                                                      INTERN AT THE SPARK FOUNDATION
+                                                      INTERN AT THE SPARKS FOUNDATION
                                                                 #GRIPJUNE21
 
 
@@ -37,7 +37,7 @@ from google.colab import files
 
  import os
  import cv2
- image_path="/content/drive/My Drive/Class_identification/images"
+ image_path="/content/drive/My Drive/Color_identification/images"        #replace with your image path
  image =cv2.imread(os.path.join(image_path,'photo1.jpg'),cv2.IMREAD_COLOR)
  
  print("The type of this input is {}".format(type(image)))
@@ -114,7 +114,7 @@ get_colors(image, 8, True)
 
 
 
-image_path="/content/drive/My Drive/Class_identification/images"
+image_path="/content/drive/My Drive/Class_identification/images"     #replace with your image path
 
 COLORS = {
     'GREEN'  : [0, 128, 0],
@@ -136,7 +136,7 @@ for file in os.listdir(image_path):
 
 plt.figure(figsize=(30,20))
 for i in range(len(images)):
-    plt.subplot(1, 15, i+1)
+    plt.subplot(1, 15, i+1)        #Total images in my folder is 15 i.e i=15
     plt.imshow(images[i])
 
 
